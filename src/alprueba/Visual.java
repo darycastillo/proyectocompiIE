@@ -80,7 +80,7 @@ DefaultTableModel dtm = new DefaultTableModel();
 
         jScrollPane2.setViewportView(Txp_SalidaTexto);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 240, 420));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 240, 430));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -242,10 +242,10 @@ public void escribir(String texto)
                 break;
                 
                 case ERROR:
-                    Expre.clear();//si hay un erro significa que el token no existe se limpia la expresion para evitar escribir en la tabla estos valores erroneos
-                    
+                   // Expre.clear();//si hay un erro significa que el token no existe se limpia la expresion para evitar escribir en la tabla estos valores erroneos
+                   jTextPane1.setText("TOKEN: "+ token);
                 default:
-                    Txp_SalidaTexto.setText("TOKEN: "+token);
+                  //  Txp_SalidaTexto.setText("TOKEN: "+token);
             }
             
             

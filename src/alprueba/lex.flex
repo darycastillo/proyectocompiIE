@@ -257,7 +257,7 @@ public String lexeme;
 
 
 
-//{PRO_INTERROGATIVO}({WHITE}|{SUSTANTIVO}|{VER_IRREGULAR_INFINITO})* {lexeme=yytext(); return PREGUNTA;}
+{PRO_INTERROGATIVO}({WHITE}|{SUSTANTIVO}|{VER_IRREGULAR_INFINITO})* {lexeme=yytext(); return PREGUNTA;}
 
 /*FIN SIGNOS*/
 
