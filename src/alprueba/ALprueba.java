@@ -17,12 +17,12 @@ public class ALprueba {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        File file= new File("C:/Users/Maare/Downloads/ppmp/ElCompiIE/src/alprueba/lex.flex");
-        jflex.Main.generate(file);
+//        File file= new File("C:/Users/Maare/Downloads/ppmp/ElCompiIE/src/alprueba/lex.flex");
+//        jflex.Main.generate(file);
 Visual a=new Visual();
 a.setVisible(true);
 a.setLocationRelativeTo(null);
-System.out.println("hpola");
+//System.out.println("hpola");
 //        
         // TODO code application logic here
     }
