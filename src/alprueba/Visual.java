@@ -242,12 +242,14 @@ public void escribir(String texto)
                 break;
                 
                 case ERROR:
-                    //holis+= "TOKEN: "+token+" "+lexer.lexeme + " No esta Dentro del Lenguaje"+"\n";
-                    //jTextPane1.setText(holis);
+                    Expre.clear();//si hay un erro significa que el token no existe se limpia la expresion para evitar escribir en la tabla estos valores erroneos
                     
                 default:
                     Txp_SalidaTexto.setText("TOKEN: "+token);
             }
+            
+            
+            //llenando la tabla
              Iterator iterador = Expre.entrySet().iterator();
                     Map.Entry producto;
                         while (iterador.hasNext()) {

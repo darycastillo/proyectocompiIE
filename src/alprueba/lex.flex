@@ -41,7 +41,6 @@ ADJ_INDEFINIDO="all"|"any"|"both"|"each"|"either"|"enough"|"few"|"less"|"little"
   ART_INDEFINIDO="a"|"an"
 /*FIN ARTICULOS*/
 
-
 /*PRONOMBRES*/
   PRO_PERSONAL="I"|"you"|"he"|"she"|"it"|"we"|"you"|"they"
   PRO_DEMOSTRATIVO="this"|"that"|"these"|"those"
@@ -238,7 +237,7 @@ public String lexeme;
 /*FIN CONTRACCION*/
 
 /*SIGNOS*/
-{PUNTO} {lexeme=yytext(); return PUNTO;}
+{PUNTO}* {lexeme=yytext(); return PUNTO;}
 {COMA} {lexeme=yytext(); return COMA;}
 {PUNTOCOMA} {lexeme=yytext(); return PUNTOCOMA;}
 {DOSPUNTOS} {lexeme=yytext(); return DOSPUNTOS;}
@@ -254,7 +253,11 @@ public String lexeme;
 {ASTERISCO} {lexeme=yytext(); return ASTERISCO;}
 {DIAGONAL} {lexeme=yytext(); return DIAGONAL;}
 
-{PRO_INTERROGATIVO}({WHITE}|{SUSTANTIVO}|{VER_IRREGULAR_INFINITO})* {lexeme=yytext(); return PREGUNTA;}
+
+
+
+
+//{PRO_INTERROGATIVO}({WHITE}|{SUSTANTIVO}|{VER_IRREGULAR_INFINITO})* {lexeme=yytext(); return PREGUNTA;}
 
 /*FIN SIGNOS*/
 
