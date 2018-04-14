@@ -22,7 +22,7 @@ public class ALprueba {
 Visual a=new Visual();
 a.setVisible(true);
 a.setLocationRelativeTo(null);
-//System.out.println("hpola");
+System.out.println("holatodos");
 //        
         // TODO code application logic here
     }
